@@ -427,3 +427,11 @@ textarea {
     margin: 0px 20px;
   }
 }
+
+
+@media screen and (width < 600px) {
+  footer {
+    gap: 10px;
+    font-size: 10px;
+  }
+}
