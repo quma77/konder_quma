@@ -22,7 +22,7 @@
             <--
           </h1>
           <p>Набережные Челны, Елабуга, Нижнекамск, Альметьевск, Ижевск</p>
-          <button>Оставить заявку</button>
+          <button onclick="scrollToDiv()">Оставить заявку</button>
         </div>
         <div class="img_main_header">
           <img src="img/header_photo.png" alt="" />
@@ -247,7 +247,7 @@
           </div>
         </div>
       </section>
-      <section class="sec3">
+      <section class="sec3" id="targetDiv">
         <h2>Конаткты</h2>
 
         <div class="start">
@@ -305,10 +305,9 @@
           document
             .getElementById("myForm")
             .addEventListener("submit", function (event) {
-              event.preventDefault(); // Предотвращаем отправку формы по умолчанию
+              event.preventDefault(); 
 
               const name = document.getElementById("name").value;
-              const issue = document.getElementById("issue").value;
               const phone = document.getElementById("phone").value;
               const email = document.getElementById("email").value;
               const comment = document.getElementById("comment").value;
@@ -402,20 +401,6 @@
             }
           </style>
           <div id="map"></div>
-          <script>
-            ymaps.ready(init);
-            function init() {
-              var myMap = new ymaps.Map("map", {
-                center: [55.739795, 52.405649],
-                zoom: 15,
-              });
-              var myPlacemark = new ymaps.Placemark([55.739795, 52.405649], {
-                balloonContent: "Проспект Мира, дом 49а, Набережные Челны",
-              });
-              myMap.geoObjects.add(myPlacemark);
-            }
-          </script>
-          <hr />
         </div>
       </section>
     </main>
@@ -424,4 +409,5 @@
       <a href="#">Политика конфиденциальности</a>
     </footer>
   </body>
+  <script src="main.js"></script>
 </html>
