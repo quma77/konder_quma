@@ -428,10 +428,61 @@ textarea {
   }
 }
 
-
 @media screen and (width < 600px) {
   footer {
     gap: 10px;
     font-size: 10px;
+    margin: 0px auto;
+    justify-content: center;
+    text-align: center;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 18px;
+    padding-top: 20px;
+    margin: 0px 50px;
+    justify-content: center;
+  }
+
+  .main_header p {
+    font-size: 10px;
+    text-align: center;
+  }
+
+  .text_main_header button {
+    padding: 5px 70px;
+    font-size: 15px;
+    margin: 10px 0px;
+  }
+
+
+  .text_main_header {
+    width: 90vw;
+    justify-content: center;
+    text-align: center;
+    margin: 0px auto;
+  }
+
+  .main_price p {
+    padding: 0px 15px;
+  }
+  .price_text {
+    padding: 10px 15px 80px 15px;
+  }
+  .price_list {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+  }
+  input[type="text"],
+  input[type="tel"],
+  input[type="email"],
+  textarea {
+    width: 290px;
+  }
+  .but_commit {
+    font-size:  15px;
+    margin: 0px 10px;
   }
 }
